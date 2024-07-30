@@ -1,0 +1,13 @@
+package com.ourproject.auction.model;
+
+@Entity
+@Table(name = "fees")
+public class FeeEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long feeId;
+    private String type;
+    private double amount;
+
+    // Getters and Setters
+}
