@@ -1,11 +1,11 @@
-package com.ourproject.auction.model;
+package com.ourproject.auction.entity;
 import java.util.Date;
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
 @Table(name = "auctions")
-public class AuctionEntity {
+public class Auction {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long auctionId;

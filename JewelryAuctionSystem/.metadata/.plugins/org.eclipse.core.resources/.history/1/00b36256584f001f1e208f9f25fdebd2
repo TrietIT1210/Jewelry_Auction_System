@@ -1,4 +1,4 @@
-package com.ourproject.auction.model;
+package com.ourproject.auction.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -6,7 +6,7 @@ import lombok.*;
 @Setter
 @Entity
 @Table(name = "auction_requests")
-public class AuctionRequestEntity {
+public class AuctionRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long requestId;
