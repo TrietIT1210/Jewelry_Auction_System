@@ -1,0 +1,13 @@
+package com.ourproject.auction.dao;
+
+import com.ourproject.auction.model.UserEntity;
+import java.util.List;
+
+public interface UserDAO {
+    void addUser(User user);
+    void updateUser(User user);
+    void deleteUser(int userId);
+    User getUserById(int userId);
+    List<User> getAllUsers();
+}
+
